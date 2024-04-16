@@ -11,7 +11,7 @@ class CustomDataset(Dataset):
         self.x_train = x_train
         self.y_train = y_train
     
-    def __getitem__(self, index) -> Any:
+    def __getitem__(self, index):
         return self.x_train[index], self.y_train[index]
 
     def __len__(self) -> int:
